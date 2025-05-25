@@ -22,17 +22,17 @@ const App = () => {
       <Route path="/" element={<LandingPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
-      <Route path="/admin" element={<ProtectedRoute element={<AdminDashboard />} role="admin" />} />
-      <Route path="/instructor" element={<ProtectedRoute element={<InstructorDashboard />} role="instructor" />} />
-      <Route path="/learner" element={<ProtectedRoute element={<LearnerDashboard />} role="learner" />} />
-      <Route path="/course/upload" element={<ProtectedRoute element={<CourseUpload />} role="instructor" />} />
-      <Route path="/course/:id" element={<ProtectedRoute element={<CourseView />} />} />
-      <Route path="/course/player/:id" element={<ProtectedRoute element={<CoursePlayer />} />} />  
-      <Route path="/payment/:id" element={<ProtectedRoute element={<PaymentPage />} />} />
+      <Route path="/admin" element={<AdminDashboard />} role="admin" />
+      <Route path="/instructor" element={<InstructorDashboard />} role="instructor" />
+      <Route path="/learner" element={<LearnerDashboard />} role="learner" />
+      <Route path="/course/upload" element={<CourseUpload />} role="instructor" />
+      <Route path="/course/:id" element={<CourseView />} />
+      <Route path="/course/player/:id" element={<CoursePlayer />} />
+      <Route path="/payment/:id" element={<PaymentPage />} />
       <Route path="/payment-success" element={<PaymentSuccess />} />
       <Route path="/payment-cancelled" element={<PaymentCancel />} />
       <Route path="/search" element={<SearchPage />} />
-      <Route path="/certificate/:id" element={<ProtectedRoute element={<CertificatePage />} />} />
+      <Route path="/certificate/:id" element={<CertificatePage />} />
     </Routes>
   );
 };
